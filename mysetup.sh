@@ -6,3 +6,7 @@ brew cask install sublime-text alfred toggl spotify appcleaner firefox opera lib
 curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar
 chmod +x wp-cli.phar
 sudo mv wp-cli.phar /usr/local/bin/wp
+
+brew install mysql@5.7
+echo 'export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"' >> ~/.bash_profile
+brew link mysql@5.7 --force
